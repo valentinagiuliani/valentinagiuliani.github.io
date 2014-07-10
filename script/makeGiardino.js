@@ -22,8 +22,7 @@ function makeGiardino(scene){
         '/giardino/palm.mtl',
         {side: THREE.DoubleSide}
       );
-
-      var loader = new THREE.OBJMTLLoader();
+var loader = new THREE.OBJMTLLoader();
       loader.addEventListener('load', function (event) {
 
         var object = event.content;
@@ -33,8 +32,8 @@ function makeGiardino(scene){
 
         mesh = object;
         mesh.rotation.x = Math.PI/2;
-        mesh.scale.set(2,2,2);
-        mesh.position.set(-7,-7,0)
+        mesh.scale.set(0.1,0.1,0.1);
+        mesh.position.set(20,-7,0)
         scene.add(mesh);
       
       });
@@ -45,6 +44,5 @@ function makeGiardino(scene){
         '/giardino/mofx_mailbox.mtl',
         {side: THREE.DoubleSide}
       );
-
 
 }
